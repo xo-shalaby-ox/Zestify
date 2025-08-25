@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 
 export default function CategoryDetails() {
   const [categoryDetails, setCategoryDetails] = useState(null);
-  const [subCategories, setSubCategories] = useState([]);
   const [deepSubCategories, setDeepSubCategories] = useState([]);
   let { id } = useParams();
 
