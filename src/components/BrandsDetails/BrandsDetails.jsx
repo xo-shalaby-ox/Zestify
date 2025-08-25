@@ -11,11 +11,9 @@ export default function BrandsDetails() {
     axios
       .get(`https://ecommerce.routemisr.com/api/v1/brands/${id}`)
       .then((res) => {
-        // console.log(res.data.data);
         setBrandsDetails(res.data.data);
       })
       .catch((err) => {
-        // console.log(err);
         toast.error("Error To Get Your Brand");
       });
   }
@@ -34,7 +32,7 @@ export default function BrandsDetails() {
               className="w-full"
               alt="item-photo"
             />
-            <h3 className="text-2xl text-emerald-500 font-semibold mt-3">
+            <h3 className="text-2xl text-blue-500 font-semibold mt-3">
               {brandsDetails?.name}
             </h3>
           </div>
