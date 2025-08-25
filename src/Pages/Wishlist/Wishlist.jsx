@@ -58,15 +58,13 @@ export default function Wishlist() {
                       alt={product?.title}
                     />
                     <div className="wishlist-caption p-2">
-                      <h3 className="text-lg text-emerald-600 font-semibold">
+                      <h3 className="text-lg text-blue-600 font-semibold">
                         {product?.title?.split(" ").slice(0, 2).join(" ")}
                       </h3>
                       <div className="product-info flex justify-between items-center">
                         <span>
                           {product?.price}
-                          <span className="text-emerald-600 font-bold">
-                            EGP
-                          </span>
+                          <span className="text-blue-600 font-bold">EGP</span>
                         </span>
                         <span>
                           <i className="fa-solid fa-star text-sm text-yellow-400"></i>
@@ -76,7 +74,7 @@ export default function Wishlist() {
                       <div className="wishlist-btns flex flex-col gap-y-1 mt-2">
                         <div
                           onClick={() => addToCart(product.id)}
-                          className="add-btn bg-emerald-500 flex justify-center items-center p-2 rounded-md cursor-pointer"
+                          className="add-btn bg-blue-500 flex justify-center items-center p-2 rounded-md cursor-pointer"
                         >
                           {Loading && currentId == product.id ? (
                             <i className="fa-solid fa-spinner fa-spin"></i>

@@ -50,8 +50,8 @@ export default function Cart() {
   return (
     <>
       {cartDetails?.products.length > 0 ? (
-        <div className="my-20">
-          <h2 className="bg-emerald-300 w-52 p-3 rounded-md font-semibold my-5">
+        <div className="container mx-auto my-20">
+          <h2 className="bg-blue-300 w-52 p-3 rounded-md font-semibold my-5">
             Total Price / {cartDetails?.totalCartPrice} EGP
           </h2>
           <div className="relative overflow-x-auto shadow-md sha sm:rounded-lg">
@@ -164,7 +164,7 @@ export default function Cart() {
 
           <div className="flex justify-start items-center gap-3 mt-5">
             <Link to={`/checkOut`}>
-              <button className="bg-emerald-300 p-3 rounded-md font-semibold hover:bg-emerald-600 duration-500">
+              <button className="bg-blue-300 p-3 rounded-md font-semibold hover:bg-blue-600 duration-500">
                 Checkout
               </button>
             </Link>
