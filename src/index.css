@@ -1,0 +1,625 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0.042 264.695);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0.042 264.695);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.129 0.042 264.695);
+  --primary: oklch(0.208 0.042 265.755);
+  --primary-foreground: oklch(0.984 0.003 247.858);
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+  --accent: oklch(0.968 0.007 247.896);
+  --accent-foreground: oklch(0.208 0.042 265.755);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.929 0.013 255.508);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.704 0.04 256.788);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.129 0.042 264.695);
+  --sidebar-primary: oklch(0.208 0.042 265.755);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.704 0.04 256.788);
+}
+
+.dark {
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.129 0.042 264.695);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.984 0.003 247.858);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.279 0.041 260.031);
+  --input: oklch(0.279 0.041 260.031);
+  --ring: oklch(0.446 0.043 257.281);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(0.279 0.041 260.031);
+  --sidebar-ring: oklch(0.446 0.043 257.281);
+}
+
+.row {
+  @apply flex flex-wrap py-5 px-3;
+}
+nav {
+  background-color: #d6d6d686;
+}
+
+.slick-dots li button::before {
+  content: "" !important;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black !important;
+}
+/* loader spinner */
+.sk-cube-grid {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 170px auto;
+}
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: blue;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+/* loader spinner */
+
+/* Start Empty Cart Loader */
+.loader {
+  --ANIMATION-DELAY-MULTIPLIER: 70ms;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.loader p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1rem;
+  animation-delay: 0s;
+  transform: translateY(4rem);
+  font-size: 30px;
+  font-weight: bold;
+  animation: hideAndSeek 1s alternate infinite cubic-bezier(0.86, 0, 0.07, 1);
+}
+.loader .c {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 0);
+}
+.loader .a {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 1);
+}
+.loader .r {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 2);
+}
+.loader .t {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 3);
+}
+.loader .e {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 4);
+}
+.loader .m {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 5);
+}
+.loader .p {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 6);
+}
+.loader .t {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 7);
+}
+.loader .y {
+  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 8);
+}
+.letter {
+  width: fit-content;
+  height: 3rem;
+}
+.i {
+  margin-inline: 5px;
+}
+@keyframes hideAndSeek {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+/* End Empty Cart Loader */
+.cart-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 40px;
+  background-color: #fff;
+}
+.orders-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: -12px;
+  background-color: #fff;
+}
+.social_media {
+  left: -65px;
+  transition: 0.5s;
+}
+.social_media.active {
+  left: 0;
+}
+.settingPass-icon {
+  right: -257px;
+  transition: 0.7s;
+}
+.settingPass-icon.active {
+  right: 0px;
+}
+.menu-bar {
+  display: none;
+}
+.category-caption-text h3 {
+  width: fit-content;
+}
+.category-caption-text h3::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+}
+.auth-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox-container label {
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #555;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease, 0.2s border cubic-bezier(0.26, 0.62, 0.43, 1.06);
+  cursor: pointer;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  top: 232%;
+  left: 50%;
+  transform: translate(-50%, -100%) scale(0.75);
+  border-radius: 50% 20% / 30% 70%;
+  width: 115%;
+  height: 115%;
+  filter: blur(4px);
+  background: #085dd4;
+  z-index: 1;
+  transition: transform 0.56s cubic-bezier(0.5, 0.26, 0.7, 1.8), top 0.38s ease,
+    filter 0.48s ease;
+}
+.checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  clip-path: polygon(
+    41% 52%,
+    26% 35%,
+    10% 51%,
+    37% 88%,
+    37% 88%,
+    37% 88%,
+    37% 88%,
+    91% 33%,
+    78% 18%
+  );
+  background: white;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.93, 0.17, 0.43, 1.07);
+}
+
+.checkbox-container:has(.checkbox input[type="checkbox"]:checked)
+  .checkbox::before {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  filter: blur(0px);
+}
+
+.checkbox-container:has(.checkbox input[type="checkbox"]:checked)
+  .checkbox::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) perspective(70px) scale(1);
+  animation: checkMarkAnimation 0.5s ease-in-out forwards;
+}
+
+.checkbox:has(input[type="checkbox"]:checked) {
+  border: 0px solid;
+}
+
+@keyframes checkMarkAnimation {
+  0% {
+    opacity: 0;
+    transform: perspective(70px) translate(10%, -20%) rotate(43deg)
+      rotateY(100deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: perspective(70px) translate(-57%, -42%) rotate(32deg)
+      rotateY(55deg) scale(1.32);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(70px) translate(-50%, -50%) rotate(0deg)
+      rotateY(0deg) scale(1);
+  }
+}
+.login-page {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.signup-page {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.forgetPass-page {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.changePass-page {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btns span::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 2px;
+  background-color: #00000036;
+  top: 15px;
+  left: 5px;
+}
+.btns span::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 2px;
+  background-color: #00000036;
+  top: 15px;
+  right: 5px;
+}
+.signup-form h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: #1644db;
+  top: 21px;
+  left: 5px;
+  border-radius: 12px;
+}
+.left_menu {
+  display: none;
+}
+
+div[aria-label] {
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid #d6d6d686;
+}
+div[aria-label] button:hover {
+  background-color: #d6d6d686;
+  border-radius: 12px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.card {
+  position: relative;
+}
+.card:hover .icon {
+  background-color: #1d64f2;
+  border: none;
+  transition: 0.7s;
+}
+.card:hover i {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.left_menu.active {
+  width: 230px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50px;
+  right: -15px;
+  border-radius: 12px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.brands {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+.brands::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.brands::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.brands-logo {
+  display: inline-flex;
+  animation: slideIn 30s linear infinite;
+}
+.brands-logo img {
+  height: 150px;
+  margin: 0 30px;
+  vertical-align: middle;
+}
+.brands:hover .brands-logo {
+  animation-play-state: paused;
+}
+.payments::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #00000071;
+  top: 0;
+  left: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .right_menu {
+    position: relative;
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+  .right_menu.active {
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 5%;
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .nav-list {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .auth-btn {
+    column-gap: 5px;
+  }
+  .main-slider img {
+    height: 400px;
+  }
+  .brands::after,
+  .brands::before {
+    width: 100px;
+  }
+  .brands-logo img {
+    height: 70px;
+  }
+}
+/* **************** */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
