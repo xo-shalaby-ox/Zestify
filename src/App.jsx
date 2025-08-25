@@ -2,7 +2,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "sonner";
 import { ReactQueryDevtools } from "./../node_modules/@tanstack/react-query-devtools/src/index";
-import AllOrders from "./Components/AllOrders/AllOrders";
 import BrandsDetails from "./Components/BrandsDetails/BrandsDetails";
 import CategoryDetails from "./Components/CategoryDetails/CategoryDetails";
 import Layout from "./Components/Layout/Layout";
@@ -15,7 +14,6 @@ import ChangePassword from "./Pages/Auth/ChangePassword/ChangePassword";
 import ForgetPassword from "./Pages/Auth/ForgetPassword/ForgetPassword";
 import Login from "./Pages/Auth/Login/Login";
 import Signup from "./Pages/Auth/Signup/Signup";
-import Brands from "./Pages/Brands/Brands";
 import Cart from "./Pages/Cart/Cart";
 import Categories from "./Pages/Categories/Categories";
 import CheckOut from "./Pages/CheckOut/CheckOut";
@@ -24,6 +22,7 @@ import Home from "./Pages/Home/Home";
 import Notfound from "./Pages/Notfound/Notfound";
 import Products from "./Pages/Products/Products";
 import Wishlist from "./Pages/Wishlist/Wishlist";
+import AllOrders from "./components/AllOrders/AllOrders";
 
 let query = new QueryClient();
 let Routing = createBrowserRouter([
